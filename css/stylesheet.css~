@@ -5,16 +5,26 @@ small {
 	text-decoration: line-through;
 	font-style: italic;
 }
-.thumbnail {
-	min-height: 412px;
-}
 .preco {
-    font-size: 22px;
-    font-weight: bold;
+	font-size: 22px;
+	font-weight: bold;
 }
 .glyphicon.glyphicon-star {
-    color: #B04632;
+	color: #B04632;
 }
-.panel.panel-primary {
-    background-color: #d9edf7;
+.panel-primary {
+	background-color: #fafafa;
+}
+.alert {
+	margin-bottom: 0px !important;
+}
+.thumbnail {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+	min-height: 412px;
+}
+.thumbnail:hover {
+	border-bottom: 5px solid #B04632;
+	opacity: 0.7;
 }

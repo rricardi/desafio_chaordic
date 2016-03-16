@@ -23,8 +23,6 @@ $( document ).ready(function() {
 								'</div>'+
 							'</div>'+
 						'</div>');		
-		
-		$('.panel-recomendados').append('<div class="alert alert-info" role="alert"><b>PRODUTOS RELACIONADOS: </b>A nossa equipe separou '+data.data.widget.size+' produto(s) que você não vai deixar de adquirir!</div>');
 			$(data.data.recommendation).each(function(i,f) {
 				var image = f.imageName;
 				image = image.replace("//", "http://");
