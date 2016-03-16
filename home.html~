@@ -14,6 +14,7 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<div class="panel panel-primary">
@@ -21,8 +22,12 @@
 			<h1 class="text-center">Catálogo de produtos</h1>
 		</div>
 		<div class="panel-body">
-			<p class="qt-estoque"></p>
-			<div class="row"></div>
+			<p class="text-center aviso"></p>
+			<div class="row">
+				<div class="destaque"></div>
+				<div class="text-center panel-recomendados"></div>
+				<div class="recomendados"></div>
+			</div>
 		</div>
 	</div>
 

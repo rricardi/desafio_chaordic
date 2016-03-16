@@ -1,0 +1,20 @@
+small {
+	color: #808080;
+}
+.preco-old {
+	text-decoration: line-through;
+	font-style: italic;
+}
+.thumbnail {
+	min-height: 412px;
+}
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+}
+.glyphicon.glyphicon-star {
+    color: #B04632;
+}
+/*.panel.panel-primary {
+    background-color: #d9edf7;
+}*/
