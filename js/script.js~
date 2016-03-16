@@ -1,0 +1,7 @@
+$( document ).ready(function() {
+	$.getJSON("http://roberval.chaordicsystems.com/challenge/challenge.json?callback=X", function(data) {
+		console.log( data.widget.size ).fail(function(textStatus, errorThrown) {
+        console.log("error " + textStatus, errorThrown);
+      });
+	});
+});
