@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="utf-8"/>
+	<!-- <meta charset="utf-8"/>
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-	<title>DESAFIO CHAORDIC+NEEMU</title>
+	<meta http-equiv="Access-Control-Allow-Origin" content="*"> -->
+	<title>Trabalho 1 - Datamining</title>
 	<link href="css/stylesheet.css" rel="stylesheet"/>
-Access-Control-Allow-Origin: http://roberval.chaordicsystems.com/challenge/challenge.json
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/script.js"></script>
@@ -17,11 +17,31 @@ Access-Control-Allow-Origin: http://roberval.chaordicsystems.com/challenge/chall
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
-<div>Renato</div>
-<div class="alert alert-danger" role="alert">
-  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-  <span class="sr-only">Error:</span>
-  Enter a valid email address
-</div>
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h1 class="text-center">Catalogo de produtos</h1>
+		</div>
+		<div class="panel-body">
+			<p class="qt-estoque"></p>
+			<div class="produtos">
+				<div class="row">
+				  <div class="col-sm-6 col-md-4">
+				   <a target="_blank" href="">
+				    <div class="thumbnail">
+				      <img src="">
+				      <div class="caption">
+					<h3 class="titulo"></h3>
+					<p class="codigo"></p>
+					<p class="preco"></p>
+					<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+				      </div>
+				    </div>
+				   </a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>

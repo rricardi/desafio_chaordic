@@ -1,7 +1,66 @@
 $( document ).ready(function() {
-	$.getJSON("http://roberval.chaordicsystems.com/challenge/challenge.json?callback=X", function(data) {
-		console.log( data.widget.size ).fail(function(textStatus, errorThrown) {
-        console.log("error " + textStatus, errorThrown);
-      });
-	});
+	/*$.ajax({
+	        url: "js/challenge.json",
+	        dataType: 'json',
+		success: function(dados) {
+//		console.log(dados.data.widget.size);
+			$('.qt-estoque').append('Atualmente nossa loja contem '+dados.data.widget.size+' produto(s) em estoque, aproveite nossos precos!');
+			$(dados.data.recommendation).each(function(i,f) {
+				$('.produtos .thumbnail img').attr('src', f.imageName);
+				//$('.produtos .titulo').append(f.name+"<br><br>");
+				//$('.produtos .codigo').append(f.businessId+"<br><br>");
+				//$('.produtos a').attr('href', f.detailUrl);
+				//$('.produtos a').attr('href', f.detailUrl);
+				/*
+				console.log(f.price);
+				console.log(f.oldPrice);
+				console.log(f.productInfo.paymentConditions);
+			})
+		}
+	});*/
+
+/*(function () {
+            console.log('Start Test');
+
+            var url = 'http://localhost:9000/api',
+                chaordic = 'http://roberval.chaordicsystems.com/challenge/challenge.json?callback=X'
+
+                handleData = function (res) {
+			$('.qt-estoque').append('Atualmente nossa loja contem '+res.data.widget.size+' produto(s) em estoque, aproveite nossos precos!');
+                    console.log('Data: ', res.data.widget.size);
+                },
+
+                handleError = function (error) {
+                    console.log('Error: ', error);
+                },
+
+                X = handleData;
+
+            $.ajax({
+                url: chaordic,
+                dataType: 'jsonp',
+            }).then(handleData);
+        })();*/
+
+(function () {
+            console.log('Start Test');
+
+            var url = 'http://roberval.chaordicsystems.com/challenge/challenge.json?callback=X'
+
+                handleData = function (data) {
+		$('.qt-estoque').append('Atualmente nossa loja contem '+data.data.widget.size+' produto(s) em estoque, aproveite nossos precos!');
+                    console.log('Data: ', data);
+                },
+
+                X = handleData;
+
+            $.ajax({
+                url: url,
+                dataType: 'jsonp',
+            });
+        })();
+
+
+
+
 });
